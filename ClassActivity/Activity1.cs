@@ -22,3 +22,16 @@ for (int i = 2; i <= 20; i +=4)
     sum += i;
 }
 Console.WriteLine("The sum is: " + sum);
+
+//Problem 5
+int [] numbers = {5, 15, 90, 23, 18, 5, 4};
+for (int i = 0; i < numbers.Length; i++)
+{
+    numbers[i] *= 3;
+}
+
+//To print the array
+// foreach (int num in numbers)
+// {
+//     Console.Write(num+ " ");
+// }
