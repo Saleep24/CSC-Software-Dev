@@ -13,3 +13,12 @@ int d = 3;
 int e = 5;
 
 Console.WriteLine("The larger number is: " + Math.Max(d, e));
+
+//Problem 4
+int sum = 0;
+
+for (int i = 2; i <= 20; i +=4)
+{
+    sum += i;
+}
+Console.WriteLine("The sum is: " + sum);
