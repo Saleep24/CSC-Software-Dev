@@ -8,6 +8,13 @@ using System;
 
 class ClassActivity
 {
+    static int IsGreaterThan(int[] arr, int num)
+    {
+        int count = 0;
+        foreach (int n in arr)
+            if (n > num) count++;
+        return count;
+    }
     static void Main(string[] args)
     {
         //Problem 1
@@ -24,7 +31,7 @@ class ClassActivity
         int d = 3;
         int e = 5;
 
-        Console.WriteLine("The largest number is: " + Math.Max(d, e));
+        Console.WriteLine("\nThe largest number is: " + Math.Max(d, e));
 
         //Problem 4
         int sum = 0;
@@ -34,7 +41,7 @@ class ClassActivity
             sum += i;
         }
 
-        Console.WriteLine("The sum is: " + sum);
+        Console.WriteLine("\nThe sum is: " + sum);
 
         //Problem 5
         int[] numbers = { 5, 15, 90, 23, 18, 5, 4 };
@@ -47,16 +54,6 @@ class ClassActivity
         //Problem 6
         int[] testArray = { 4, 5, 19, 20, 5, 1, 12, 15, 100 };
         int testValue = 15;
-        Console.WriteLine($"Count greater than {testValue}: " + IsGreaterThan(testArray, testValue));
-        //Problem 6 solution
-        static int IsGreaterThan(int[] arr, int num)
-        {
-            int count = 0;
-            foreach (int n in arr)
-            {
-                if (n > num) count++;
-            }
-            return count;
-        }
+        Console.WriteLine($"\nCount greater than {testValue}: " + IsGreaterThan(testArray, testValue));
     }
 }
