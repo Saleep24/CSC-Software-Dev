@@ -42,12 +42,7 @@ class ClassActivity
         {
             numbers[i] *= 3;
         }
-
-        //To print the array
-        // foreach (int num in numbers)
-        // {
-        //     Console.Write(num+ " ");
-        // }
+        Console.WriteLine("\nModified array: " + string.Join(" ", numbers));
         
         //Problem 6
         int[] testArray = { 4, 5, 19, 20, 5, 1, 12, 15, 100 };
