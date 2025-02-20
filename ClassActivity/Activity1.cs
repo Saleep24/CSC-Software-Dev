@@ -18,7 +18,7 @@ class ClassActivity
         int d = 3;
         int e = 5;
 
-        Console.WriteLine("The larger number is: " + Math.Max(d, e));
+        Console.WriteLine("The largest number is: " + Math.Max(d, e));
 
         //Problem 4
         int sum = 0;
@@ -42,5 +42,20 @@ class ClassActivity
         // {
         //     Console.Write(num+ " ");
         // }
+        
+        //Problem 6
+        int[] testArray = { 4, 5, 19, 20, 5, 1, 12, 15, 100 };
+        int testValue = 15;
+        Console.WriteLine($"Count greater than {testValue}: " + IsGreaterThan(testArray, testValue));
+        //Problem 6 solution
+        static int IsGreaterThan(int[] arr, int num)
+        {
+            int count = 0;
+            foreach (int n in arr)
+            {
+                if (n > num) count++;
+            }
+            return count;
+        }
     }
 }
