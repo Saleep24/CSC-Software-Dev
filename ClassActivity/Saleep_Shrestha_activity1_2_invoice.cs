@@ -9,7 +9,7 @@ namespace Assignment
     public class Invoice
     {
         public int PartNumber { get; set; }
-        public string PartName { get; set; }
+        public string PartName { get; set; } = String.Empty;
         public int QuantityBought { get; set; }
         public decimal TotalPrice { get; set; }
     }
