@@ -30,6 +30,25 @@ namespace Assignment
             var sortedByPrice = SortByPrice(invoices);
             var filtered = FilterByMinPrice(invoices, 20.00m);
             
+            
+            Console.WriteLine("===== Sorted by Name =====");
+            foreach (var invoice in sortedByName)
+            {
+                Console.WriteLine($"{invoice.PartName} - {invoice.TotalPrice:C}");
+            }
+
+            Console.WriteLine("\n===== Sorted by Price =====");
+            foreach (var invoice in sortedByPrice)
+            {
+                Console.WriteLine($"{invoice.PartName} - {invoice.TotalPrice:C}");
+            }
+
+            Console.WriteLine("\n===== Filtered (Price > $20) =====");
+            foreach (var invoice in filtered)
+            {
+                Console.WriteLine($"{invoice.PartName} - {invoice.TotalPrice:C}");
+            }
+            
         }
 
         public static List<Invoice> SortByName(List<Invoice> data)
